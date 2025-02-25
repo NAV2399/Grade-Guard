@@ -2,7 +2,8 @@
 GradeGuard is an AI bot that evaluates the usage of ai in the completion of a project, exam, test, assignment, or class exercise by students and grade them according. <br>
 It is robust system that promote academic integrity by detecting AI-generated content in student assignments.
 
-[<img src='./front-end/src/assets/Screenshot 2024-11-12 at 8.15.41 PM.png'>](https://github.com/PTarsis/GradeGaurd/blob/main/front-end/src/assets/Screenshot%202024-11-12%20at%208.15.41%E2%80%AFPM.png)
+![image](https://github.com/user-attachments/assets/80637cdd-6a07-4fb7-a597-38576109de77)
+
 <br><br>
 <hr/>
 
