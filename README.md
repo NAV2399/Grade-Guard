@@ -1,9 +1,118 @@
-GradeGuard
-
-
-GradeGuard is an AI bot that evaluates the usage of ai in the completion of a project, exam, test, assignment, or class exercise by students and grade them according.
+# GradeGuard
+GradeGuard is an AI bot that evaluates the usage of ai in the completion of a project, exam, test, assignment, or class exercise by students and grade them according. <br>
 It is robust system that promote academic integrity by detecting AI-generated content in student assignments.
 
-![image](https://github.com/user-attachments/assets/34dc6fd4-537f-4281-b628-628721d01bd8)
+<img src='./front-end/src/assets/Screenshot 2024-11-12 at 8.15.41 PM.png'>
+<br><br>
+<hr/>
 
-https://github.com/PTarsis/GradeGaurd?tab=readme-ov-file#run-project-locally:~:text=in%20student%20assignments.-,Run%20Project%20Locally,-It%20is%20advisable
+# Run Project Locally 
+*It is advisable you use two terminal to run*
+## Backend
+cd to back-end
+```bash
+cd back-end
+```
+
+### Install packages
+```bash
+pip install -r requirements.txt
+```
+
+In the `back-end` directory, create a `.env` file using your editor or terminal
+
+```bash
+touch .env
+```
+
+Open the env file and paste the following 
+
+```js
+OPENAI_API_KEY=
+ASSISTANT_ID=
+API_TOKEN=
+```
+
+For Admin or Product owner Only
+- Create the assistant
+```bash
+python ./src/create_model.py
+```
+- copy the `ASSISTANT_ID` output in the terminal and paste i you `.env` file
+<img src='./front-end/src/assets/Assistant Created.png'>
+
+
+
+### Update the `.env`
+Ask Admin or Product owner for the api keys
+- Update the env `OPENAI_API_KEY` with your [open api key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key) 
+- Update the env `ASSISTANT_ID` with your [assistant id](https://platform.openai.com/docs/api-reference/assistants/object)
+- Update the env `API_TOKEN` with any random string of any length
+
+
+## Start Back-end Server
+```bash
+python ./src/app.py
+```
+<img src='./front-end/src/assets/Backend Server.png'>
+
+<br><br><br><br><br><br><br>
+## Frontend
+cd to frontend
+
+```bash
+cd front-end
+```
+
+Install dependecies
+```bash
+npm install
+```
+
+
+In the `front-end` directory, create a `.env` file using your editor or terminal
+
+```bash
+touch .env
+```
+
+Open the env file and paste the following 
+
+```js
+VITE_API_TOKEN=
+VITE_API_URL=http://127.0.0.1:5000
+```
+
+### Update the `.env`
+Your `VITE_API_TOKEN` value must be the same value as `API_TOKEN` in your `back-end/.env` file
+
+
+## To run Frontend
+```bash
+npm run dev
+```
+<img src='./front-end/src/assets/FrontEnd Server.png'>
+
+
+
+# Technology
+ Using OpenAI Assistant, we trained GTP 4o
+ ## Training data
+ - `back-end/src/training_data/training.json` contains the evaluation data
+ - `back-end/src/training_data/fallback.json` contains the fallback data to handle non ai-related question
+
+## Frontend
+- React
+- Fetch API
+- HTML 5
+- CSS 3
+
+## Backend
+- Python
+- Flask
+- OpenAI
+
+# Limitation
+- Hallucination
+- Inconsistent/Invalid Json return
+- Not good at handling multiple scenrio. 
