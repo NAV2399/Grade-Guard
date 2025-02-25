@@ -2,7 +2,7 @@
 GradeGuard is an AI bot that evaluates the usage of ai in the completion of a project, exam, test, assignment, or class exercise by students and grade them according. <br>
 It is robust system that promote academic integrity by detecting AI-generated content in student assignments.
 
-<img src='./front-end/src/assets/Screenshot 2024-11-12 at 8.15.41 PM.png'>
+[<img src='./front-end/src/assets/Screenshot 2024-11-12 at 8.15.41 PM.png'>](https://github.com/PTarsis/GradeGaurd/blob/main/front-end/src/assets/Screenshot%202024-11-12%20at%208.15.41%E2%80%AFPM.png)
 <br><br>
 <hr/>
 
@@ -39,7 +39,8 @@ For Admin or Product owner Only
 python ./src/create_model.py
 ```
 - copy the `ASSISTANT_ID` output in the terminal and paste i you `.env` file
-<img src='./front-end/src/assets/Assistant Created.png'>
+![image](https://github.com/user-attachments/assets/fa931b77-5c95-4853-87c8-60d4fe4d448e)
+
 
 
 
@@ -54,7 +55,8 @@ Ask Admin or Product owner for the api keys
 ```bash
 python ./src/app.py
 ```
-<img src='./front-end/src/assets/Backend Server.png'>
+![image](https://github.com/user-attachments/assets/8af63509-73d2-488d-86df-3d8b9df4e87e)
+
 
 <br><br><br><br><br><br><br>
 ## Frontend
