@@ -94,7 +94,8 @@ Your `VITE_API_TOKEN` value must be the same value as `API_TOKEN` in your `back-
 ```bash
 npm run dev
 ```
-<img src='./front-end/src/assets/FrontEnd Server.png'>
+![image](https://github.com/user-attachments/assets/c3993fa4-0d7d-47e5-8611-068c9e99affd)
+
 
 
 
